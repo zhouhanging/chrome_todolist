@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入js -->
+    <script type="text/javascript" src="popup.js"></script>
+</head>
+
+<body style="width:500px;padding-top: 20px;">
+    <div class="centerView">
+        <div class="title">
+            <span class="title1">Todo</span><span class="title2">List</span>
+        </div>
+        <!-- 输入框添加栏 -->
+        <div class="infoView">
+            <textarea placeholder="请输入待办事项" name="inputTodoInfo"></textarea>
+            <div class="pflex infoView" style="justify-content:space-between">
+                <button class="addButton" id="addList">添加待办事项</button>
+                <div class="mainColor">
+                    提醒周期
+                    <select id="selectTime" class="mainColor">
+                        <option value="">15分钟</option>
+                        <option value="2">10分钟</option>
+                        <option value="3">5分钟</option>
+                        <option value="3">1分钟</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="listDiv">
+        <div class="centerView">
+            <div class="title2">待办事项</div>
+            <!-- 待办事项列表，渲染列表 -->
+            <div id="todo">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
